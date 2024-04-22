@@ -1,0 +1,415 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<title> ViajaConTodo </title>
+</head>
+<body>
+
+<header>
+    
+    <div class="Logoprincipal">
+    	<img src="img/logo3.png">
+    </div>
+	
+
+	<div class="lista">
+		<nav>
+	        <ul>
+
+	        	<div class="principal">
+		            <li><a href="Principal" id="inicio">Inicio</a></li>
+		            <li><a href="Principal" id="ofertas">Ofertas</a></li>
+		            <li><a href="Principal" id="visitados">Visitados Recientemente</a></li>
+		            <li><a href="Principal" id="ideas">Ideas</a></li>
+	       		</div>
+
+	           <div class="otros">
+		            <li><a href="Otros" id="contactos">Contacto</a></li>
+		            <li><a href="Otros" id="ayuda">Ayuda</a></li>
+		            <li><a href="https://accounts.google.com/AccountChooser?service=CPanel&continue=https%3A%2F%2Fadmin.google.com%2Fmed.unne.edu.ar%2FDashboard&hl=es" id="iniciarsesion">Iniciar Sesión</a></li>
+
+	           </div>
+	            
+	        </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+		<input type="text" placeholder="Buscar">
+		<div class="btn">
+			<i class="fa fa-search"></i>
+		</div>
+	</div>
+	
+	<div class="idioma-selector">
+	    <input type="checkbox" id="toggle-idiomas" class="toggle-idiomas">
+	    <label for="toggle-idiomas" class="boton-idioma">
+	        <img src="img/idioma2.png" alt="Español">
+	    </label>
+	    <ul class="menu-idiomas">
+	        <li><a href="Español" id="español">Español</a></li>
+	        <li><a href="Inglés" id="inglés">Inglés</a></li>
+	        <li><a href="Francés" id="francés">Francés</a></li>
+	    </ul>
+	</div>
+
+	<div class="botones">
+		<nav>
+			<ul>
+				<li><a href="Pais" id="pais">País</a></li>
+				<li><a href="Hoteles" id="hoteles">Hoteles</a></li>
+				<li><a href="Cosasquehacer" id="cosasquehacer">Cosas que hacer</a></li>
+				<li><a href="Restaurantes" id="restaurantes">Restaurantes</a></li>
+				<li><a href="Vuelos" id="vuelos">Vuelos</a></li>
+				<li><a href="Alquileres" id="alquileres">Alquileres vacacionales</a></li>
+				<li><a href="Cruceros" id="cruceros">Cruceros</a></li>
+				<li><a href="Coches" id="coche">Coches de alquiler</a></li>
+				<li><a href="Foros" id="foros">Foros</a></li>
+			</ul>
+		</nav>
+		
+	</div>
+    
+</header>
+ 
+  	<div class="slider-frame">
+        <ul>
+            <li><img src="img/slider1.jpg" alt=""></li>
+            <li><img src="img/slider2.jpg" alt=""></li>
+            <li><img src="img/slider3.jpg" alt=""></li>
+            <li><img src="img/slider4.jpg" alt=""></li>
+        </ul>
+    </div> 
+
+   <main>
+
+   		<section>
+
+   			<div class="cuadro">
+   				<h1 class="titulo">¡Encuentra hospedaje en los lugares más insólitos!</h1>
+   			 <h2 class="subtituloprincipal">Introduce datos para encontrar los mejores precios: </h2>
+
+<!-- 	   			  <div class="detalles">
+	   			  		<nav>
+	   			  			<ul>
+	   			  				<li>Pais</li>
+
+	   			  				<li>Lugar</li>
+	   			  				 	
+
+	   			  				<li>Llegada</li>
+	   			  					
+	   			  				<li>Salida</li>
+	   			  				    
+	   			  				<li>Huéspedes</li>
+	   			  					
+	   			  			</ul>
+	   			  		</nav>
+	   			  	
+	   			  </div> -->
+   			 
+
+		   			 <div class="espacio">
+
+		   			 	<nav>
+			   			  	<ul>
+			   			  		<li>
+			   			  			<form>						        
+										<input type="text" id="pais" name="País" placeholder="País">
+
+									</form>
+								</li>
+
+			   			  		<li>
+			   			  			<form>							        
+										<input type="text" id="lugarinput" name="lugar" placeholder="Lugar">
+									</form>
+								</li>
+			   			  				 	
+			   			  		<li>
+			   			  			<form>
+						             	<input type="date" id="fecha" name="fecha">
+					    			</form>
+					    		</li>
+			   			  					
+			   	  				<li>
+			   	  					<form>
+					                	<input type="date" id="fecha" name="fecha">
+					    			</form>
+						    	</li>
+			   			  				    
+			   			  		<li>
+			   			  			<form>							        
+										<input type="text" id="huespedes" name="huespedes" placeholder="Huéspedes">
+									</form>
+								</li>
+							</ul>	
+		  				</nav>
+	   			 	</div>
+	   		</div>
+   		</section>
+   		<section> 			
+   			<h2 class="subtitulo">¡Descubre hospedajes en los lugares mas visitados!</h2>
+
+   			<div class="lugares">
+   				<nav>
+   					<ul>
+   						<li class="conjuntolugar1">
+			   				<a href="#">
+				   				<div class="lugar1">
+				   					<img src="img/madrid.png" alt="Lugar 1">
+				   					<div>
+				   						<h4>Madrid</h4>
+				   						<p>España</p>
+				   					</div>
+				   				</div>
+			   				</a>
+			   				
+		   			    </li>
+
+		   			    <li class="conjuntolugar2">
+			   				<a href="#">
+				   				<div class="lugar2">
+				   					<img src="img/ginebra.jpg" alt="Lugar 2">
+				   					<div>
+					   					<h4>Ginebra</h4>
+					   					 <p>Suiza</p>
+				   				    </div>
+				   				</div>
+			   				</a>			   				
+		   			    </li>
+
+		   			    <li class="conjuntolugar3">
+			   				<a href="#">
+				   				<div class="lugar3">
+				   					<img src="img/sorrento.webp" alt="Lugar 3">
+				   					<div>
+					   					<h4>Sorrento</h4>
+					   					<p>Italia</p>
+				   					</div>
+				   				</div>
+			   				</a>			   				
+		   			    </li>
+
+		   			    <li class="conjuntolugar4">
+			   				<a href="#">
+				   				<div class="lugar4">
+				   					<img src="img/cancun.jpg" alt="Lugar 4">
+				   					<div>
+					   					<h4>Cancún</h4>
+					   					<p>México</p>
+				   					</div>
+				   				</div>
+			   				</a>			   				
+		   			    </li>
+
+		   			    <li class="conjuntolugar5">
+			   				<a href="#">
+				   				<div class="lugar5">
+				   					<img src="img/cartagena.jpg" alt="Lugar 5">
+				   					<div>
+					   					<h4>Cartagena</h4>
+					   					<p>Colombia</p>
+				   					</div>
+				   				</div>
+			   				</a>			   				
+		   			    </li>
+
+	   				</ul>
+   				</nav>
+   			</div>
+   		</section>
+
+   		<section>
+		
+				<h1 class="subtitulo2">¿Deseas alojarte en lugares específicos de Honduras?</h1>
+   				<h3 class="subtitulo3">Los mejores hoteles de Roatán, Honduras. </h3>
+
+   				<div class="hoteles">
+   					<nav>
+   						<ul>
+   							<li class="conjuntohotel">
+   								<a href="Hotel" id="hotel">
+   									<img src="img/roatan.jpg">
+
+   									<div class="infor1">
+   										<h4>Infinity Bay Spa & Beach Resort</h4><br>
+   										<p>8,6/10 ¡Excelente! (1001 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel1">
+   								<a href="Hotel1" id="hotel1">
+   									<img src="img/hotel1.jpg">
+
+   									<div class="infor2">
+   										<h4>Fantasy Island Beach Resort, <br>Dive and Marina All Inclusive</h4><br>
+   										<p>5,8/10 (465 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel2">
+   								<a href="Hotel2" id="hotel2">
+   									<img src="img/hotel2.avif">
+
+   									<div class="infor3">
+   										<h4>Kimpton Grand Roatan Resort And <br>Spa, an IHG Hotel</h4><br>
+   										<p>8,8/10 ¡Excelente! (18 comentarios)</p>
+   									</div>
+
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel3">
+   								<a href="Hotel3" id="hotel3">
+   									<img src="img/hotel3.jpg">
+
+   									<div class="infor4">
+   										<h4>Paradise Beach Hotel</h4><br>
+   										<p>8,2/10 ¡Muy bueno! (841 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel4">
+   								<a href="Hotel4" id="hotel4">
+   									<img src="img/hotel4.avif">
+
+   									<div class="infor5">
+   										<h4>Las Verandas Hotel & Villas</h4><br>
+   										<p>8,8/10 ¡Excelente! (259 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel5">
+   								<a href="Hotel5" id="hotel5">
+   									<img src="img/hotel5.avif">
+
+	   								<div class="infor5">
+	   									<h4>Naboo Resort & Dive Center</h4><br>
+	   									<p>8,9/10 ¡Excelente! (317 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+   						</ul>
+   					</nav>
+   				</div>
+   		 </section>
+
+   		 <section>
+   		 	<h3 class="subtitulo20">Los mejores hoteles de San Pedro, Honduras.</h3>
+
+   		 	<div class="hoteles2">
+   					<nav>
+   						<ul>
+   							<li class="conjuntohotel20">
+   								<a href="Hotel" id="hotel20">
+   									<img src="img/hotel2.0.jpg">
+
+   									<div class="infor21">
+   										<h4>Hyatt Place San Pedro</h4><br>
+   										<p>8,7/10 ¡Excelente! (648 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel21">
+   								<a href="Hotel1" id="hotel21">
+   									<img src="img/hotel2.1.jpg">
+
+   									<div class="infor22">
+   										<h4>Copantl Hotel & Convention Center</h4><br>
+   										<p>5,8/10 (887 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel22">
+   								<a href="Hotel2" id="hotel22">
+   									<img src="img/hotel2.2.jpg">
+
+   									<div class="infor23">
+   										<h4>Hotel Martell</h4><br>
+   										<p>8,8/10 ¡Excelente! (560 comentarios)</p>
+   									</div>
+
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel23">
+   								<a href="Hotel3" id="hotel23">
+   									<img src="img/hotel2.3.jpg">
+
+   									<div class="infor24">
+   										<h4>Hotel Palace Ejecutivo</h4><br>
+   										<p>8,2/10 ¡Muy bueno! (178 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel25">
+   								<a href="Hotel4" id="hotel24">
+   									<img src="img/hotel2.4.jpg">
+
+   									<div class="infor2.5">
+   										<h4>Aloft San Pedro Sula</h4><br>
+   										<p>8,8/10 ¡Excelente! (60 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+
+   							<li class="conjuntohotel26">
+   								<a href="Hotel5" id="hotel25">
+   									<img src="img/hotel2.5.jpg">
+
+	   								<div class="infor26">
+	   									<h4>Hilton Princess San Pedro Sula</h4><br>
+	   									<p>8,9/10 ¡Excelente! (870 comentarios)</p>
+   									</div>
+   								</a>
+   							</li>
+   						</ul>
+   					</nav>
+   				</div>
+   		 </section>
+    </main>
+
+ 	<main>
+ 		<footer>
+		<div class="links-informativos">
+			<ul>
+				<li><a href="#">Acerca de Nosotros</a></li>
+				<li><a href="#">Política y Privacidad</a></li>
+				<li><a href="#">Términos y Condiciones</a></li>
+				<li><a href="#">Preguntas Frecuentes</a></li>
+			</ul>
+		</div>
+
+		
+
+		<div class="redes-sociales">
+			<ul>
+				<li><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook"width="100px" height="100px"></a></li>
+				<li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram" width="100px" height="100px"></a></li>
+				<li><a href="https://www.twitter.com/"><img src="img/X.jpeg" alt="twitter" width="100px" height="100px"></a></li>
+				
+				
+			</ul>
+
+		</div>
+		
+		<div class="info-contacto">
+			<P1>Síguenos en nuestras redes sociales</P>
+		</div>
+
+	</footer>
+ 	</main>
+</body>
+</html>

@@ -1,0 +1,1046 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    font-family: lato;
+}
+
+.detalles {
+	color: white;
+}
+
+body {
+
+	height: 2000px;
+	text-align: center;
+	
+
+}
+
+.detalles nav ul{
+	list-style-type: none ;
+
+}
+
+.detalles nav li{
+	display:inline-flex;
+	padding: 0px 80px 0px 70px;
+}
+
+
+.espacio nav li{
+	display:inline-flex;
+	padding: 0px 25px 0px 25px;
+}
+
+.espacio input {
+
+	height: 28px;
+	padding: 0px 0px 0px 5px;
+}
+.espacio ::placeholder{
+	font-size: 18px;
+}
+.cuadro{
+	position: absolute;
+	top: 70%;
+	left: 16%;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+.titulo{
+	font-size: 60px;
+	position: absolute;
+	top: -1200%;
+	right: 0%;
+}
+
+.subtituloprincipal{
+	font-size: 25px;
+	position: absolute;
+	top: -280%;
+	right: 20%;
+}
+
+/*Sección del carrusel de imagen ===============================================================================*/
+
+.slider-frame {
+
+	margin: 5% -400px 0 0px;
+	width: 1473px;
+    height: 500px;
+	overflow: hidden;
+	border: 1px solid black;
+	position: absolute;
+	top: 16%;
+
+
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+	height: 80%;
+	filter: brightness(50%);
+
+}
+
+@keyframes slide {
+
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*==========================================================================================================*/
+
+
+/*Sección del buscador ================================================================================================*/
+.lista {                                                                                                               
+
+	color: black;
+	font-size: 25px;
+}
+
+.container {
+	position: absolute;
+	left: 49%;
+	top: 1.5%;
+	padding: 10px;
+
+}
+
+::placeholder {
+	color: grey;
+	padding: 0px 15px;
+	margin: 0px 0px 0px -15px;
+	font-size: 20px;
+	position: absolute;
+	top: 0px;
+}
+
+.container input {
+
+	font-size: 18px;
+	border: 1px solid grey;
+	border-radius: 50px;
+	color: #000;
+	outline: none;
+	box-sizing: border-box;
+	width: 300px;
+	padding: 2px 2px 2px 15px;
+
+}
+
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 45px;
+	height: 45px;
+	background: #D50000;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	
+}
+
+.btn i {
+	font-size: 15px;
+	color: white;
+	line-height: 80px;
+	position: absolute;
+	top: -16px;
+	left: 16px;
+	
+}
+
+
+.container:hover i{
+	transform: rotate(-360deg);
+}
+
+.btn:hover{
+	background: grey;
+}
+/*=====================================================================================================================*/
+
+/*Sección del bottón idioma ================================================================================*/
+
+.idioma-selector {
+    position: absolute;
+    right: 20.5%;
+    top: 0%;
+
+}
+
+.toggle-idiomas {
+    display: none; /* Ocultar el checkbox por defecto */
+}
+
+.boton-idioma {
+    display: inline-block;
+    cursor: pointer;
+    align-content: center;
+}
+
+.boton-idioma img {
+    width: 35px; /* Tamaño de la imagen*/
+    height: auto;
+}
+
+.menu-idiomas {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 5px 10px 0px 40px;
+    list-style: none;
+    display: none; /* Ocultar el menú por defecto */
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#español:checked{
+	background-color: black;
+	color: white;
+	padding: 0px 11px;
+}
+
+
+.toggle-idiomas:checked + .boton-idioma + .menu-idiomas {
+    display: block; /* Mostrar el menú cuando el checkbox está marcado */
+
+}
+
+.menu-idiomas li {
+    padding: 5px 10px;
+    margin: 8px 0px 8px -35px;
+    align-content: center;
+}
+
+.menu-idiomas a{
+	color: black;
+	text-decoration: none;
+}
+/*=============================================================================================================**/
+
+.Logoprincipal img {
+
+	height: 120px;
+	position: absolute;
+	top: -1%;
+	left: 7%;
+}
+
+
+header{
+	
+	border-bottom: 1px solid black;
+	color: white;
+	text-align: center;
+	padding: 0px 600px 140px;
+	background: #003580;
+	margin: -15px 0px 0px -5px;
+	box-shadow: 2px 4px 8px 0px #888;
+}
+
+.lista a {
+ 
+  padding: 1px 15px;
+  margin-left: 40px;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+
+}
+.lista nav ul{
+
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin: 12px 12px 12px 12px;
+	padding: 10px 10px 10px 10px;
+	
+}
+
+.lista nav a{
+  color: #darkblue;
+  text-decoration:none;
+  padding: 10px;
+  width: 170px;
+}
+
+
+.otros {
+
+	position: absolute;
+	display: flex;
+	right: 0%;
+	top: 1%;
+	padding: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 10px;
+}
+
+#contactos {
+
+	padding: 1px 10px 1px 10px;
+	margin: 0px 5px 0px 5px;
+	color: white;
+}
+
+#contactos:hover{
+  color: white;
+  background-color: black;
+}
+
+#ayuda {
+
+	padding: 1px 10px 1px 10px;
+	margin: 0px 5px 0px 5px;
+	color: white;
+}
+
+#ayuda:hover{
+  color: white;
+  background-color: black;
+}
+
+#iniciarsesion{
+
+	padding: 1px 10px 1px 10px;
+	margin: 0px 5px 0px 5px;
+	color: white;
+
+}
+
+#iniciarsesion:hover{
+  color: white;
+  background-color: black;
+
+}
+
+#inicio{
+	margin: 0px 8px;
+	padding: 8px 13px 8px 13px;
+	color: black;
+	background-color: white;
+}
+
+#ofertas{
+	margin: 0px 8px;
+	padding: 8px 13px 8px 13px;
+	color: white;
+}
+#ofertas:hover {
+  color: black;
+  background-color:white;
+  filter: brightness(0.7);
+}
+
+#visitados{
+	margin: 0px 8px;
+	padding: 8px 13px 8px 13px;
+	color: white;
+}
+#visitados:hover {
+  color: black;
+  background-color:white;
+  filter: brightness(0.7);
+}
+
+#ideas{
+	margin: 0px 8px;
+	padding: 8px 13px 8px 13px;
+	color: white;
+}
+#ideas:hover {
+  color: black;
+  background-color:white;
+  filter: brightness(0.7);
+}
+.principal {
+
+	display: flex;
+	margin: 0px 0px 0px 10px;
+	position: absolute;
+	right: 51%;
+	top: 25px;
+
+
+}
+
+.lista {
+
+	font-size: 16px;
+	font-weight: bold;
+
+}
+
+/*============================================================================================*/
+.botones {
+
+	position: absolute;
+	top: 16%;
+	right: 6%;
+	
+
+}
+
+.botones nav a{
+
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: margin-bottom 0.2s ease;
+
+}
+
+.botones nav a:hover{
+
+	border-bottom: 3px solid #bac6cf;
+	padding: 0px 0px 10px;
+	color: #bac6cf;
+}
+
+.botones nav li {
+
+	padding: 0px 11px 0px 11px;
+	margin: 0px 15px 0px 15px;
+
+}
+
+
+.botones nav ul {
+
+	text-align: center;
+	list-style: none;
+	display: flex;
+}
+
+#hoteles {
+	border-bottom: 3px solid white;
+	padding: 0px 0px 10px;
+}
+
+/*===============================================================================================*/
+.subtitulo {
+
+	position: absolute;
+	top: 92%;
+	left: 0%;
+}
+
+.subtitulo2 {
+	position: absolute;
+	top: 133%;
+	left: 0%;
+}
+
+.subtitulo3 {
+	position: absolute;
+	top: 138%;
+	left: 1%;
+}
+
+
+.lugar1 img{
+
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+}
+.conjuntolugar1{
+
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 40px ;
+}
+/*===========================================================================================*/
+
+.lugar2 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+}
+
+.conjuntolugar2{
+
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 40px;
+}
+/*=====================================================================================*/
+.lugar3 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+
+}
+
+.conjuntolugar3{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom:40px ;
+}
+
+/*=========================================================================================*/
+.lugar4 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.conjuntolugar4{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;	
+	border: 1px solid black;
+	padding-bottom: 40px ;
+}
+/*==========================================================================================*/
+.lugar5 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+
+}
+
+.conjuntolugar5{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 40px ;
+}
+
+/*===========================================================================================*/
+
+.lugares {
+
+	position: absolute;
+	top: 98%;
+	left: 0%;
+	margin: 0px 10px;
+	overflow: hidden;
+    width: 1478px;
+	display: flex;
+	margin: 0px -5px;
+	text-align: left;
+}
+
+.lugares h4{
+	padding-left: 5px;
+}
+
+.lugares p{
+	padding-left: 5px;
+}
+.lugares li{
+
+	margin-right: 30px;
+}
+.lugares nav a {
+
+	color: black;
+	text-decoration: none;
+}
+
+.lugares nav ul{
+
+	display: flex;
+	margin-left: 10px;
+	justify-content: center;
+	list-style-type: none ;
+
+}
+
+/*========================================================================================*/
+
+.hoteles {
+
+	width: 1507px;
+	position: absolute;
+	top: 142%;
+	left: -2%;
+	margin: 0px 10px;
+	display: flex;
+	margin: 0px -5px;
+	overflow: hidden;
+}
+
+.hoteles h4{
+	padding-left: 5px;
+}
+.hoteles p{
+	padding-left: 5px;
+}
+.hoteles nav a {
+
+	color: black;
+	text-decoration: none;
+}
+
+.hoteles nav ul{
+
+	display: flex;
+	margin-left: 10px;
+	justify-content: center;
+	list-style-type: none ;
+
+}
+
+.hoteles nav li {
+
+	text-decoration: none;
+	margin-left: 30px;
+	
+}
+
+/*====================================================================================================*/
+#hotel img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#hotel{
+
+	text-align: left;
+}
+
+.conjuntohotel {
+
+	border: 1px solid black;
+	padding-bottom: 30px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+/*===========================================================================================*/
+
+#hotel1 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.conjuntohotel1 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+#hotel1{
+
+	text-align: left;
+}
+/*=============================================================================================*/
+#hotel2 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel2{
+
+	text-align: left;
+}
+
+.conjuntohotel2 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*========================================================================================*/
+#hotel3 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel3{
+
+	text-align: left;
+}
+
+.conjuntohotel3 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*=========================================================================================*/
+#hotel4 img{
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel4{
+
+	text-align: left;
+}
+
+.conjuntohotel4 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*=============================================================================================*/
+#hotel5 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel5{
+
+	text-align: left;
+}
+.conjuntohotel5 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*============================================================================================*/
+
+.hoteles p{
+	font-size: 12px;
+}
+
+/*====================================================================================================*/
+/*==================================================================================================*/
+
+.subtitulo20{
+
+	position: absolute;
+	top: 179%;
+	left: 1%;
+}
+.hoteles2 p{
+	font-size: 12px;
+}
+
+.hoteles2 {
+
+	width: 1507px;
+	position: absolute;
+	top: 184%;
+	left: -2%;
+	margin: 0px 10px;
+	display: flex;
+	margin: 0px -5px;
+	overflow: hidden;
+}
+
+.hoteles2 h4{
+	padding-left: 5px;
+}
+.hoteles2 p{
+	padding-left: 5px;
+}
+.hoteles2 nav a {
+
+	color: black;
+	text-decoration: none;
+}
+
+.hoteles2 nav ul{
+
+	display: flex;
+	margin-left: 10px;
+	justify-content: center;
+	list-style-type: none ;
+
+}
+
+.hoteles2 nav li {
+
+	text-decoration: none;
+	margin-left: 30px;
+	
+}
+
+/*===========================================================================================*/
+
+#hotel20 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.conjuntohotel20 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+#hotel20{
+
+	text-align: left;
+}
+/*=============================================================================================*/
+#hotel21 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel21{
+
+	text-align: left;
+}
+
+.conjuntohotel21 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*========================================================================================*/
+#hotel22 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel22{
+
+	text-align: left;
+}
+
+.conjuntohotel22 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*=========================================================================================*/
+#hotel23 img{
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel23{
+
+	text-align: left;
+}
+
+.conjuntohotel23 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*=============================================================================================*/
+#hotel24 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel24{
+
+	text-align: left;
+}
+.conjuntohotel24 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*=============================================================================================*/
+#hotel25 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel25{
+
+	text-align: left;
+}
+.conjuntohotel25 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*=============================================================================================*/
+#hotel26 img{
+
+	height: 150px;
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#hotel26{
+
+	text-align: left;
+}
+.conjuntohotel26 {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 1px solid black;
+	padding-bottom: 30px ;
+}
+/*===============================================================================================*/
+
+footer{
+  background-color: black ;
+  color:#f5f3f5;
+  display:flex;
+  justify-content: space-around ;
+  padding: 30px;
+  padding-right: 245px;
+  flex-wrap: wrap;
+  font-family: "sans-serif";
+  font-size:20px;
+  text-align: center;
+  position: absolute;
+  top: 230%;
+}
+
+.links-informativos{
+  width: 400px;
+}
+
+.links-informativos ul{
+  list-style: none;
+  margin:0 0px 0px -130px;
+  padding: 0;
+  text-align: left;
+}
+
+.links-informativos li a{
+  text-decoration: none;
+  color:#f5f3f5 ;
+  font-size: 15px;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.redes-sociales{
+  width: 300px;
+}
+
+.redes-sociales img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.redes-sociales li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.redes-sociales img:hover{
+  transform: scale(1.1);
+}
+.redes-sociales ul{
+
+	margin-left: -450px;
+}
+.info-contacto{
+  width: 500px;
+  text-align: right;
+  font-size: right;
+  font-size: 20px;
+
+
+}
